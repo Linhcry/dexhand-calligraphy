@@ -1,0 +1,40 @@
+{
+  "checked_date": "2026-09-10",
+  "manufacturer": "DexRobot / 上海戴盟机器人",
+  "manufacturer_home": "https://www.dex-robot.com/en",
+  "product_page": "https://www.dex-robot.com/productionDexhand",
+  "manufacturer_download_center": "https://www.dex-robot.com/downloadCenter/detail/7309fb847499da21",
+  "official_developer_docs": "https://dexrobot.github.io/dexrobot_mujoco/",
+  "repository": "https://github.com/DexRobot/dexrobot_mujoco",
+  "commit": "9ab142309aa2392d6923601064d3de8c58ba5ee3",
+  "license": "Apache-2.0; original license preserved under vendor/dexrobot_mujoco/LICENSE",
+  "models": [
+    "dexrobot_mujoco/models/dexhand021_right_simplified.xml",
+    "dexrobot_mujoco/models/dexhand021_right_jaka_zu7.xml"
+  ],
+  "selected_model": "dexrobot_mujoco/models/dexhand021_right_jaka_zu7.xml",
+  "exact_competition_hardware_confirmed": false,
+  "upstream_files_modified": false,
+  "derived_scene_modifications": [
+    "Shift arm base and add table, A3 paper, generic mark, brush rack, rigid brush approximation and visual inkstone",
+    "Add overhead camera, lights and palm-control site",
+    "Use a 0.002 second timestep and lower development finger actuator gains",
+    "Read meshes through Python and pass an in-memory asset filesystem to support Windows Chinese paths"
+  ],
+  "not_enabled": [
+    "ROS interfaces",
+    "TaShan proprietary sensor binary",
+    "hardware CAN FD IO"
+  ],
+  "additional_algorithm_sources": {
+    "mujoco": "https://github.com/google-deepmind/mujoco",
+    "ocr": "https://github.com/RapidAI/RapidOCR",
+    "stroke_data": "https://github.com/chanind/hanzi-writer-data",
+    "stroke_upstream": "https://github.com/skishore/makemeahanzi"
+  },
+  "product_variant": "DexHand021 MP / 量产版",
+  "official_download_entry": "7309fb847499da21",
+  "official_download_document": "https://dexrobot.feishu.cn/docx/HRaBdq3X7owIuUxWVAicKYE4nqh?from=from_copylink",
+  "collision_variant": "official simplified collision",
+  "requested_page_check": "outputs/model_check_20260910/verification.json"
+}

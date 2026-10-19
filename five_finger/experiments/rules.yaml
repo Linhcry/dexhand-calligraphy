@@ -1,0 +1,48 @@
+# Historical proxy used by the existing 2026-08-27 experiments and tests.
+# It is intentionally frozen for reproducibility. Current official constraints
+# are recorded in config/competition_20260911.json and must be used for new work.
+source_pdf: ../references/official-five-20260827.pdf
+source_pages: [7, 8, 9, 10, 11, 12, 13, 14, 15]
+preliminary:
+  round_seconds: 180
+  rounds: 2
+  maximum_dots_per_round: 3
+  hold_seconds: 3.0
+  dip_depth_m: 0.003
+  dip_seconds: 0.5
+  overhead_height_max_m: 0.05
+  ink_radius_must_exceed_eye_fraction: 0.3333333333333333
+  process_points: {touch: 10, hold: 15, dip: 10, overhead: 5}
+  base_points: {A3: 50, A4: 80, A5: 120}
+  per_round_cap: 500
+final:
+  round_seconds: 300
+  paper_m: [0.297, 0.420]
+  character_base_points: {20: 2.0, 28: 2.5, 40: 3.0}
+  whole_poem_bonus: 30
+  process_points: {touch: 10, hold: 15, dip: 10, spoken_recognition: 15}
+penalties:
+  brush_drop: 20
+  ink_spill: 10
+  paper_shift_over_m: 0.01
+  paper_shift_points: 15
+  overtime_points: 50
+assumptions:
+  official_robot_model_confirmed: false
+  official_dragon_images_available: false
+  official_standard_font_available: false
+  official_workcell_dimensions_available: false
+  eye_radius_examples_m: {A3: 0.008, A4: 0.005, A5: 0.003}
+  eye_radius_examples_are_official_final_values: false
+  brush_radius_m: 0.006
+  rack: two_static_U_supports_for_horizontal_brush
+  contact_evidence: MuJoCo_finger_brush_collision_pair_normal_force
+  contact_threshold_N: 0.01
+  held_minimum_distinct_fingers: 2
+  held_requires_thumb: true
+  held_lift_m: 0.02
+  maximum_relative_slip_speed_m_s: 0.02
+  gravity_compensation: joint_bias_feedforward_arm_only
+  gravity_compensation_torque_limit_Nm: 40
+  ink_transfer_model: unavailable
+  drawing_quality_judge: unavailable

@@ -1,0 +1,74 @@
+{
+  "description": "Declared upright practice fixture, reference robot, soft finger contacts, rigid approximate ink tip; not the official contest fixture.",
+  "yaw_deg": 0.0,
+  "initial_shift_m": [
+    0,
+    0,
+    0
+  ],
+  "grip_force_targets_N": [
+    2.0,
+    1.0,
+    1.0
+  ],
+  "force_gain_m_per_Ns": 0.008,
+  "feedback_start_s": 3.5,
+  "finger_contact_friction": [
+    0.8,
+    0.005,
+    0.0001
+  ],
+  "finger_contact_dimensions": 6,
+  "contact_solref": [
+    0.006,
+    1.0
+  ],
+  "contact_solimp": [
+    0.95,
+    0.999,
+    0.001
+  ],
+  "rack_friction": [
+    0.05,
+    0.001,
+    0.0001
+  ],
+  "paper_friction": [
+    0.1,
+    0.001,
+    0.0001
+  ],
+  "brush_radius_m": 0.006,
+  "pen_down_z_m": 0.0018,
+  "text": "永",
+  "origin_xy_m": [
+    0.25,
+    -0.085
+  ],
+  "character_size_m": 0.075,
+  "clearance_m": 0.014,
+  "writing_speed_m_s": 0.025,
+  "travel_speed_m_s": 0.06,
+  "grip_targets_rad": {
+    "r_f_joint1_1": 0.4530890609626722,
+    "r_f_joint1_2": 0.951081604461702,
+    "r_f_joint1_3": 0.48597605783008097,
+    "r_f_joint1_4": 0.47124623217343853,
+    "r_f_joint2_1": 3.0193536858307725e-07,
+    "r_f_joint2_2": 0.7465199520760728,
+    "r_f_joint2_3": 0.5464829336476351,
+    "r_f_joint2_4": 0.3923063369371933,
+    "r_f_joint3_1": 0.0,
+    "r_f_joint3_2": 0.8022593200570973,
+    "r_f_joint3_3": 0.6471344301917066,
+    "r_f_joint3_4": 0.5330683335623936,
+    "r_f_joint4_1": 0.0,
+    "r_f_joint4_2": 0.12,
+    "r_f_joint4_3": 0.12,
+    "r_f_joint4_4": 0.12,
+    "r_f_joint5_1": 0.0,
+    "r_f_joint5_2": 0.12,
+    "r_f_joint5_3": 0.12,
+    "r_f_joint5_4": 0.12
+  }
+}

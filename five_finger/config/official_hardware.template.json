@@ -1,0 +1,11 @@
+{
+  "status": "UNCONFIGURED_DO_NOT_CONNECT",
+  "arm": {"manufacturer": null, "model": null, "sdk_version": null, "joint_names": [], "joint_limits_rad": {}, "velocity_limits_rad_s": {}, "servo_period_s": null, "command_timeout_s": null},
+  "hand": {"model": null, "bus": "CAN FD per rules", "driver": null, "motor_names": [], "joint_to_motor_mapping": null, "feedback_force_unit": null, "feedback_rate_hz": null},
+  "camera": {"model": null, "transport": "USB3.0 per rules", "rgb_depth_alignment": null, "depth_scale_to_m": null, "calibration_file": null},
+  "tool": {"T_flange_hand": null, "T_hand_brush_tip": null, "mass_kg": null, "grasp_force_range_N": null, "writing_force_range_N": null},
+  "world": {"T_base_table": null, "table_size_m": null, "static_anchor_file": null, "ink_surface_datum_m": null},
+  "competition": {"operation_mode": "full_autonomous", "human_command_during_round_allowed": false, "mode_switch_during_round_allowed": false, "local_compute_only": true},
+  "submission": {"official_entrypoint": null, "operating_system": null, "accepted_archive_format": null, "internet_policy": "local processing only; cloud and remote servers are prohibited", "laptop_price_cap_cny": 8000},
+  "commissioning": {"official_model_confirmed": false, "joint_mapping_verified": false, "calibration_verified": false, "tool_transform_verified": false, "force_units_verified": false, "watchdog_verified": false, "emergency_stop_verified": false, "collision_model_verified": false, "low_speed_hardware_trial_passed": false}
+}

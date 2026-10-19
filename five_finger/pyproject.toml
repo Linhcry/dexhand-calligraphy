@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "five-finger-calligraphy"
+version = "0.1.0"
+description = "Local MuJoCo and perception baseline for the five-finger art challenge"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "mujoco>=3.3,<4", "numpy>=2,<3", "scipy>=1.14,<2",
+  "opencv-python>=4.10,<5", "pillow>=11,<13", "pyyaml>=6,<7",
+  "rapidocr-onnxruntime==1.4.4"
+]
+
+[project.scripts]
+five-finger = "fivefinger.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fivefinger*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "source": {
+    "title": "五指灵巧操作-艺术技能挑战-2026总决赛修订版",
+    "published_date": "2026-09-11",
+    "url": "https://rcccaa.drct-caa.org.cn/image/file/20260911/1789106474409702.pdf",
+    "pages_reviewed": [3, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21]
+  },
+  "selected_operation_mode": {
+    "name": "full_autonomous",
+    "score_multiplier": 1.0,
+    "human_command_during_round_allowed": false,
+    "mode_switch_during_round_allowed": false,
+    "declare_before_each_round": true
+  },
+  "compute": {
+    "local_only": true,
+    "cloud_compute_allowed": false,
+    "remote_server_allowed": false,
+    "team_laptop_required": true,
+    "laptop_price_cap_cny": 8000,
+    "price_reference": "JD self-operated price before the competition"
+  },
+  "hardware": {
+    "arm": {
+      "type": "six_axis_collaborative_arm",
+      "payload_max_kg": 3.0,
+      "reach_max_m": 0.93,
+      "repeatability_m": 0.00002,
+      "mount": "fixed_rear_center"
+    },
+    "hand": {
+      "type": "five_finger_dexterous_hand",
+      "dof_min": 19,
+      "single_fingertip_force_min_N": 12.0,
+      "normal_force_resolution_N": 0.1,
+      "position_repeatability_m": 0.00015,
+      "communication": "CAN FD"
+    },
+    "camera": {
+      "type": "fixed_overhead_depth_camera",
+      "resolution_min_pixels": 900000,
+      "fps_min": 15,
+      "communication": "USB3.0",
+      "team_may_change_camera_settings": false,
+      "organizer_calibration_provided": true,
+      "team_recalibration_during_debug_allowed": true
+    },
+    "extra_sensors_allowed": false,
+    "hardware_modification_allowed": false
+  },
+  "preliminary": {
+    "task": "dragon_eye_dotting",
+    "attempts": 3,
+    "seconds_per_attempt": 180,
+    "preparation_seconds_before_attempts": [600, 300, 300],
+    "process_points": {
+      "touch_brush": 20,
+      "stable_hold_3s": 40,
+      "dip_and_withdraw": 80
+    },
+    "result_points": {
+      "inside_eye": 360,
+      "inside_1_5r": 300,
+      "inside_2_0r": 240,
+      "inside_2_5r": 120,
+      "miss": 0
+    },
+    "ink_radius_must_exceed_eye_fraction": 0.3333333333333333,
+    "best_attempt_counts": true,
+    "maximum_points": 500
+  },
+  "final": {
+    "task": "specified_poem_calligraphy",
+    "attempts": 1,
+    "round_seconds": 300,
+    "paper": {
+      "sheet_count": 4,
+      "sheet_type": "A3 grid paper",
+      "layout": "2x2_no_gap",
+      "overall_size_m": [0.594, 0.841],
+      "one_character_per_grid": true,
+      "team_may_replace_or_add_paper": false
+    },
+    "process_points": {
+      "touch_brush": 20,
+      "stable_hold_3s": 40,
+      "dip_and_withdraw": 80
+    },
+    "character_score_values": [0, 1, 2],
+    "consecutive_five_character_bonus": 5,
+    "normalized_quality_points_max": 1860,
+    "maximum_points": 2000
+  },
+  "penalties": {
+    "brush_drop_each": 20,
+    "minor_ink_spill": 10,
+    "major_ink_spill": 50,
+    "paper_shift_over_m": 0.01,
+    "paper_shift_each": 15,
+    "overtime": 50,
+    "physical_human_intervention_each": 50,
+    "equipment_not_restored_after_round": 50,
+    "equipment_not_restored_within_30s": 50,
+    "brush_not_clean_at_start": 100,
+    "safety_violation": 200
+  },
+  "submission": {
+    "all_code_pre_event_review_required": true,
+    "qualification_email": "robot_2026@126.com",
+    "qualification_email_subject": "五指灵巧手非遗艺术技能赛项_队伍名_学校名",
+    "qualification_video_seconds_max": 120,
+    "qualification_video_bytes_max": 30000000,
+    "qualification_deadline": "no later than three weeks before the event"
+  },
+  "pending_official_release": [
+    "exact arm and hand model",
+    "official SDK and example programs",
+    "camera calibration parameters and published error",
+    "workcell dimensions and fixture poses",
+    "dragon image library and eye geometry",
+    "poem list and screen presentation format",
+    "official score sheet and final device information"
+  ]
+}

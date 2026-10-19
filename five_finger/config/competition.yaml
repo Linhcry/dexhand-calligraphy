@@ -1,0 +1,36 @@
+track: five_finger_art
+rule_source: https://rcccaa.drct-caa.org.cn/image/file/20260827/1787795937567742.pdf
+official_hardware_model_confirmed: false
+real_hardware_available: false
+hardware_io_enabled: false
+reference_hand: DexRobot DexHand021 right simplified
+reference_arm: JAKA Zu7 from DexRobot public simulation repository
+reference_only: true
+simulation_hand_joint_coordinates: 20
+simulation_nearly_locked_joint: r_f_joint3_1
+manufacturer_production_hand_dof: 19
+manufacturer_production_active_drives: 12
+real_motor_mapping: null
+limits_from_rules:
+  preliminary_round_seconds: 180
+  final_round_seconds: 300
+  grip_hold_seconds: 3.0
+  ink_minimum_depth_m: 0.003
+  ink_minimum_dwell_seconds: 0.5
+  maximum_height_above_eye_m: 0.05
+  paper_size_m: [0.297, 0.420]
+  laptop_price_limit_cny: 8000
+simulation_settings:
+  timestep_seconds: 0.002
+  control_hz: 500
+  render_width: 1280
+  render_height: 960
+  tactile_backend: mujoco_native
+  brush_model: rigid_barrel_and_compliant_contact_tip_approximation
+  ink_model: visual_only_no_fluid
+unconfirmed:
+  - competition_robot_and_hand_exact_model
+  - motor_coupling_and_CAN_FD_protocol
+  - workcell_dimensions_and_camera_intrinsics
+  - official_dragon_images_and_poem_font_database
+  - brush_force_and_ink_material_parameters

@@ -1,0 +1,95 @@
+{
+  "task": "五指决赛：古诗书法，简单级五言绝句，随机诗题，20 字正文",
+  "official_scene_pages": [
+    7,
+    8,
+    9,
+    13,
+    14,
+    15
+  ],
+  "round_limit_s": 300,
+  "paper_size_m": [
+    0.297,
+    0.42
+  ],
+  "paper_center_xy_m": [
+    0.28,
+    -0.17
+  ],
+  "camera_resolution": [
+    1600,
+    1200
+  ],
+  "camera_fps": 30,
+  "camera_position_m": [
+    0.15,
+    0,
+    1.15
+  ],
+  "camera_fovy_deg": 52,
+  "arm_mount_height_m": 0.008,
+  "elbow_up_seed_rad": [
+    -0.5389960146982702,
+    -0.0627672791687679,
+    -2.5618413478322477,
+    0.6425229828005686,
+    -2.1097854035024883,
+    3.1415874018076653
+  ],
+  "ink_center_xy_m": [
+    0.3,
+    0.27
+  ],
+  "ink_inner_half_size_m": [
+    0.037,
+    0.027
+  ],
+  "ink_surface_z_m": 0.035,
+  "ink_bottom_z_m": 0.017,
+  "dip_required_depth_m": 0.003,
+  "dip_required_dwell_s": 0.5,
+  "dip_target_depth_m": 0.005,
+  "ink_capacity_m": 4.0,
+  "character_size_m": 0.032,
+  "character_gap_m": 0.009,
+  "origin_xy_m": [
+    0.165,
+    -0.04
+  ],
+  "columns": 5,
+  "writing_speed_m_s": 0.045,
+  "travel_speed_m_s": 0.1,
+  "clearance_m": 0.004,
+  "minimum_arm_table_clearance_m": 0.001,
+  "official_robot_model_confirmed": false,
+  "official_poem_bank_published": false,
+  "dimensions_status": "A3 and published numeric rules exact; unspecified fixture dimensions are explicit estimates from the page 9 layout",
+  "grip_force_targets_N": [
+    3.0,
+    1.5,
+    1.5
+  ],
+  "finger_contact_friction": [
+    0.8,
+    0.005,
+    0.005
+  ],
+  "normal_force_target_N": 0.12,
+  "normal_admittance_m_Ns": 0.004,
+  "normal_force_filter_s": 0.03,
+  "writing_wrist_pitch_deg": 0.0,
+  "grasp_height_offset_m": 0.0,
+  "friction_impedance_ratio": 10.0,
+  "noslip_iterations": 20,
+  "continuous_strokes": true,
+  "recover_contact_midstroke": true,
+  "grip_maintenance": true,
+  "tool_point_jacobian": true,
+  "upright_tool_feedback": false,
+  "stroke_timing": "cosine_cruise",
+  "grip_maintenance_gain": 0.001,
+  "pinch_reserve_only": true,
+  "pinch_reserve_fraction": 0.9,
+  "maintenance_lock_spread": true
+}
